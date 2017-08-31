@@ -1,0 +1,58 @@
+ 
+
+  <!-- Nav Bar -->
+	
+	<nav [ngStyle]="{ 'background-color': nav_color }" id="top_pin">
+		<div materilaize="nav-wrapper" class="nav-wrapper">
+			<a routerLink="/" class="brand-logo">
+				<img src="assets/images/logo/XYSOLAR-logo.png" alt="">  
+			</a> 
+			<ul id="nav-mobile" class="right hide-on-med-and-down" (click)="setNavColor()">
+				<li><a routerLink="sales">業務連結</a><span class="underline"></span></li>
+				<li ><a routerLink="project" >工程實績</a><span class="underline"></span></li>
+				<li><a routerLink="contact">聯絡我們</a><span class="underline"></span></li>
+				
+			</ul>
+
+
+			
+	 
+
+			<!-- slid Nav -->
+			<ul id="sidenav" class="side-nav" materialize="sideNav" [materializeParams]="sidenavParams" [materializeActions]="sidenavActions" data-activates="sidenav">
+				<li>
+					<div class="userView">
+						<div class="background">
+							<img src="./assets/images/bg/sideNavBG.jpg">
+						</div>
+						
+						<a routerLink="/"><img class="circle" src="./assets/images/logo/sideNavLogo.png"></a>
+					
+						<a routerLink="/"><span class="white-text name">XYSOLAR</span></a>
+
+						<a routerLink="/"><span class="white-text email">向陽能源科技有限公司</span></a>
+					</div>
+				</li>
+				<li>
+					<a class="waves-effect" routerLink="/"><i class="material-icons">domain</i>關於向陽</a>
+				</li>
+				<li>
+					<a class="waves-effect" routerLink="/sales"><i class="material-icons">insert_drive_file</i>業務連結</a>
+				</li>
+				<li>
+					<a class="waves-effect" routerLink="/project"><i class="material-icons">widgets</i>工程實績</a>
+				</li>
+				<li>
+					<a class="waves-effect" routerLink="/contact"><i class="material-icons">bubble_chart</i>聯絡我們</a>
+				</li> 
+			</ul>
+		  	
+		  	<a routerLink="/" data-activates="slide-out" class="button-collapse" (click)="showSidenav()"><i class="material-icons">menu</i></a>
+		  
+			<!-- End of slid Nav -->
+	   
+
+		</div>
+	</nav>
+
+ 
